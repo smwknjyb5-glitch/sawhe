@@ -1,0 +1,177 @@
+ <!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>الحيوانات وأصواتها</title>
+
+<style>
+body{
+    font-family:Arial;
+    text-align:center;
+    background:#f0f0f0;
+}
+
+.container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.animal{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 0 5px gray;
+    width:220px;
+}
+
+img{
+    width:200px;
+    height:150px;
+    object-fit:contain;
+    background:white;
+}
+button{
+    margin-top:10px;
+    padding:8px 15px;
+    cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<h1>الحيوانات وأصواتها</h1>
+
+<div class="container">
+
+    <div class="animal">
+        <img src="cat.jpg" onclick="playSound('catSound')">
+        <h3>القطة</h3>
+        <button onclick="playSound('catSound')">اسمع الصوت</button>
+        <audio id="catSound" src="cat.mp3"></audio>
+    </div>
+
+    <div class="animal">
+        <img src="dog.jpg" onclick="playSound('dogSound')">
+        <h3>الكلب</h3>
+        <button onclick="playSound('dogSound')">اسمع الصوت</button>
+        <audio id="dogSound" src="dog.mp3"></audio>
+    </div>
+
+     <div class="animal">
+        <img src="chicken.jpg" onclick="playSound('chickenSound')">
+        <h3>الدجاجة</h3>
+        <button onclick="playSound(' chickenSound')">اسمع الصوت</button>
+        <audio id=" chickenSound" src=" chicken.mp3"></audio>
+    </div>
+
+     <div class="animal">
+        <img src=" cow.jpg" onclick="playSound(' cowSound')">
+        <h3> البقرة</h3>
+        <button onclick="playSound('  cowSound')">اسمع الصوت</button>
+        <audio id="  cowSound" src="  cow.mp3"></audio>
+    </div>
+
+     <div class="animal">
+        <img src="  sheep.jpg" onclick="playSound('sheepSound')">
+        <h3>الخروف</h3>
+        <button onclick="playSound('sheepSound')">اسمع الصوت</button>
+        <audio id="sheepSound" src="sheep.mp3"></audio>
+    </div>
+
+    <div class="animal">
+        <img src="lion.jpg" onclick="playSound('lionSound')">
+        <h3> الاسد</h3>
+        <button onclick="playSound('lionSound')">اسمع الصوت</button>
+        <audio id="lionSound" src="lion.mp3"></audio>
+    </div>
+
+    <div class="animal">
+        <img src="coq.jpg" onclick="playSound('coqSound')">
+        <h3>الديك</h3>
+        <button onclick="playSound('coqSound')">اسمع الصوت</button>
+        <audio id="coqSound" src="coq.mp3"></audio>
+    </div>
+
+   <div class="animal">
+        <img src="cheval.jpg" onclick="playSound('chevalSound')">
+        <h3> الحصان </h3>
+        <button onclick="playSound('chevalSound')">اسمع الصوت</button>
+        <audio id="chevalSound" src="cheval.mp3"></audio>
+    </div>
+
+    <div class="animal">
+        <img src="ane.jpg" onclick="playSound('aneSound')">
+        <h3>  الحمار </h3>
+        <button onclick="playSound('aneSound')">اسمع الصوت</button>
+        <audio id="aneSound" src="ane.mp3"></audio>
+    </div>
+
+
+    <div class="animal">
+        <img src="singe.jpg" onclick="playSound('singeSound')">
+        <h3>القرد</h3>
+        <button onclick="playSound('singeSound')">اسمع الصوت</button>
+        <audio id="singeSound" src="singe.mp3"></audio>
+    </div>
+
+
+     <div class="animal">
+        <img src="eleph.jpg" onclick="playSound('elephSound')">
+        <h3>الفيل </h3>
+        <button onclick="playSound('elephSound')">اسمع الصوت</button>
+        <audio id="elephSound" src="eleph.mp3"></audio>
+    </div>
+
+
+     <div class="animal">
+        <img src="dib.jpg" onclick="playSound('dibSound')">
+        <h3>الذئب  </h3>
+        <button onclick="playSound('dibSound')">اسمع الصوت</button>
+        <audio id="dibSound" src="dib.mp3"></audio>
+    </div>
+
+    <div class="animal">
+        <img src="tigre.jpg" onclick="playSound('tigreSound')">
+        <h3>النمر</h3>
+        <button onclick="playSound('tigreSound')">اسمع الصوت</button>
+        <audio id="tigreSound" src="tigre.mp3"></audio>
+    </div>
+
+
+    <div class="animal">
+        <img src="dauphin.jpg" onclick="playSound('dauphinSound')">
+        <h3> الدلفين</h3>
+        <button onclick="playSound('dauphinSound')">اسمع الصوت</button>
+        <audio id="dauphinSound" src="dauphin.mp3"></audio>
+    </div>
+
+    <div class="animal">
+        <img src=" gorille.jpg" onclick="playSound('gorilleSound')">
+        <h3>الغوريلا</h3>
+        <button onclick="playSound('gorilleSound')">اسمع الصوت</button>
+        <audio id="gorilleSound" src="gorille.mp3"></audio>
+    </div>
+
+    <div class="animal">
+        <img src="grenouille.jpg" onclick="playSound('grenouilleSound')">
+        <h3>الضفدع</h3>
+        <button onclick="playSound('grenouilleSound')">اسمع الصوت</button>
+        <audio id="grenouilleSound" src="grenouille.mp3"></audio>
+    </div>
+
+
+
+</div>
+
+<script>
+function playSound(id){
+    let sound = document.getElementById(id);
+    sound.currentTime = 0;
+    sound.play();
+}
+</script>
+
+</body>
+</html>
